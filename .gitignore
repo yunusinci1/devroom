@@ -1,0 +1,28 @@
+# Bu dosya Gemini tarafından ilk oluşturulmuştur.
+
+# --- BAĞIMLILIKLAR (Kütüphaneler) ---
+# npm install komutuyla indirilen binlerce dosyayı GitHub'a yüklemeyiz.
+# Postanenin deposundaki devasa raflar gibi düşün, her şubede (bilgisayarda) zaten aynısı kurulur.
+node_modules/
+
+# --- GÜVENLİK VE AYARLAR ---
+# Gizli anahtarlar, veritabanı şifreleri ve port numaraları. 
+# Evinizin anahtarı gibidir, asla paylaşılmaz.
+.env
+.env.local
+
+# --- LOGLAR (Hata Kayıtları) ---
+# Uygulama çalışırken oluşan günlük kayıtları.
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# --- İŞLETİM SİSTEMİ ARTIKLARI ---
+# Windows ve macOS'un otomatik oluşturduğu, kodla ilgisi olmayan sistem dosyaları.
+.DS_Store
+Thumbs.db
+
+# --- DERLEME ÇIKTILARI (Build/Dist) ---
+# Eğer ileride bir araçla kodu küçültürsek veya paketlersek bu dosyalar burada olur.
+dist/
+build/
