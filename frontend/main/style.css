@@ -1,0 +1,76 @@
+:root {
+  --primary-color: #246d9e;
+  --secondary-color: #1b4f72;
+  --ternary-color: #2ecc71;
+  --light-theme-bg: #ffffff;
+  --light-theme-sec-bg: #d5c4c4;
+  --dark-theme-bg: #2c3e50;
+  --dark-theme-sec-bg: #212c37;
+  --light-theme-text: #000000;
+  --dark-theme-text: #ecf0f1;
+  --font-family-serif: "Arial", sans-serif;
+  --font-family-monospace: "Courier New", monospace;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  font-family: var(--font-family-serif);
+  background-color: var(--dark-theme-bg);
+  color: var(--dark-theme-text);
+  margin: 4px;
+  padding: 0;
+  overflow: hidden;
+}
+
+.sidebar {
+  width: 20%;
+  height: 100vh;
+  background-color: var(--dark-theme-sec-bg);
+  box-sizing: border-box;
+}
+
+.textarea {
+  width: 80%;
+  height: 100vh;
+  font-family: var(--font-family-monospace);
+}
+
+#textarea {
+  background-color: var(--dark-theme-bg);
+  color: var(--dark-theme-text);
+  width: 100%;
+  font-size: 18px;
+  height: 100%;
+  padding: 20px 24px;
+  box-sizing: border-box;
+  resize: none;
+  outline: none;
+}
+
+.sidebar-content {
+  height: 93vh;
+}
+
+.menulist {
+  height: 7vh;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  list-style: none;
+}
+
+.menulist div {
+  background-color: var(--secondary-color);
+  flex-grow: 1;
+  margin: 0;
+  left: 0;
+  padding: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.menulist div:hover {
+  background-color: var(--primary-color);
+  color: var(--light-theme-bg);
+}
